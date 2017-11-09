@@ -14,7 +14,6 @@ import javax.xml.ws.handler.MessageContext;
 import javax.xml.ws.handler.soap.SOAPHandler;
 import javax.xml.ws.handler.soap.SOAPMessageContext;
 
-//public  class myHandler {
 public class myHandler implements SOAPHandler<SOAPMessageContext>{
 
     public boolean handleMessage(SOAPMessageContext context) {
@@ -32,8 +31,6 @@ public class myHandler implements SOAPHandler<SOAPMessageContext>{
                 if (soapHeader == null){
                     soapHeader = soapEnv.addHeader();
                 }
-                String macAddress = getMACAddress();
-
                 //add a soap header called "macAddress"
                 QName qname = new QName("fromClientHandler", "helloWorld");
                 SOAPHeaderElement soapHeaderElement = soapHeader.addHeaderElement(qname);
