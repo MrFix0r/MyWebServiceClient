@@ -6,4 +6,9 @@
                 <javaee:handler-class>com.bivgroup.handler.myHandler</javaee:handler-class>
             </javaee:handler>
         </javaee:handler-chain>
+    <!--<javaee:handler-chain>-->
+        <!--<javaee:handler>-->
+            <!--<javaee:handler-class>com.bivgroup.handler.SimpleWsAuthHandler</javaee:handler-class>-->
+        <!--</javaee:handler>-->
+    <!--</javaee:handler-chain>-->
     </javaee:handler-chains>

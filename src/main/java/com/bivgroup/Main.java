@@ -15,6 +15,7 @@ public class Main {
     private static ContractFirstWebServicePort port;
 
     public static void main(String[] args) {
+
         ContractFirstWebServicePortImplService service = new ContractFirstWebServicePortImplService();
         port = service.getContractFirstWebServicePortImplPort();
 
